@@ -1,10 +1,10 @@
 package seleniumBasics;
+
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -20,7 +20,6 @@ public class HandlingFileUpload extends Base {
    	  WebElement submit = driver.findElement(By.id("submitbutton"));
    	  submit.click();
       }
-      
       public void fileuploadusingRobotclass() throws AWTException {
    	   driver.navigate().to("https://www.ilovepdf.com/pdf_to_word");
    	   WebElement fileupload1 = driver.findElement(By.id("pickfiles"));
@@ -54,7 +53,5 @@ public static void main(String[] args) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	
 }
 }
-

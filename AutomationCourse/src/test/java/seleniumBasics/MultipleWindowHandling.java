@@ -1,11 +1,8 @@
 package seleniumBasics;
-
 import java.util.Iterator;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 public class MultipleWindowHandling extends Base{
 	 public void verifyMultipleWindow() {
    	  driver.navigate().to("https://demo.guru99.com/popup.php"); 
@@ -25,16 +22,10 @@ public class MultipleWindowHandling extends Base{
    		  }
    	  }
       }
-      
-      
 public static void main(String[] args) {
 	// TODO Auto-generated method stub
 	MultipleWindowHandling obj = new MultipleWindowHandling();
 	obj.initializeBrowser();
 	obj.verifyMultipleWindow();
-	
-
 }
-
 }
-

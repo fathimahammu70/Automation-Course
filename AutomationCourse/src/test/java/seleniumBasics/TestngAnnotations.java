@@ -20,7 +20,7 @@ public class TestngAnnotations {
 	public void beforeMethodSample() {
 		System.out.println("Before Method");
 	}
-	@AfterMethod
+	@AfterMethod                
 	public void afterMethodSample() {
 		System.out.println("After Method");
 	}

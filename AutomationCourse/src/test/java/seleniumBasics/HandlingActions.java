@@ -3,7 +3,6 @@ package seleniumBasics;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,7 +12,7 @@ public class HandlingActions extends Base{
 		WebElement others = driver.findElement(By.id("others"));
 		Actions action = new Actions(driver);
 		action.contextClick(others).build().perform();
-	}
+	} 
 	public void verifyMouseHover() {
 		WebElement others = driver.findElement(By.id("others"));
 		Actions action = new Actions(driver);
@@ -26,7 +25,7 @@ public class HandlingActions extends Base{
 		Actions action = new Actions(driver);
 		action.dragAndDrop(dragme, drop).build().perform();
 	}
-	public void verifyKeyboardAction() throws AWTException {
+	 public void verifyKeyboardAction() throws AWTException {
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_T);
@@ -37,7 +36,7 @@ public class HandlingActions extends Base{
 		// TODO Auto-generated method stub
 		HandlingActions ha = new HandlingActions();
 		ha.initializeBrowser();
-		// ha.verifyrightclick();
+		ha.verifyRightClick();
 		// ha.verifyMouseHover();
 		// ha.verifyDragandDrop();
 		try {

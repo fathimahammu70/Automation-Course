@@ -4,20 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import pages.LoginPage;
 import seleniumBasics.DemoBase;
 
 public class LoginTest extends DemoBase {
  @Test
 public void verifyWhetherUserIsAbleToLoginWithValidcredentials() {
-	WebElement userName = driver.findElement(By.id("user-name"));
-	userName.sendKeys("standard_user");
-	
-	WebElement passWord = driver.findElement(By.id("password"));
-	passWord.sendKeys("secret_sauce");
-	
-	WebElement loginButton = driver.findElement(By.id("login-button"));
-	loginButton.click();
- }
+	 LoginPage loginPage=new LoginPage(driver);
+		loginPage.enterUserNameOnUserNameField();
+		loginPage.enterPasswordOnPasswordField();
+		loginPage.loginButtonClick();
+	}
  @Test
  public void verifyWhetherUserIsAbleToLoginWithValidUsernameAndInvalidPassword() {
 	 WebElement userName = driver.findElement(By.id("user-name"));

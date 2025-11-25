@@ -19,11 +19,11 @@ public WebDriver driver;
 	
 	
 	
-	public void enterUserNameOnUserNameField() {
-		userName.sendKeys("standard_user");
+	public void enterUserNameOnUserNameField(String usernamevalue) {
+		userName.sendKeys(usernamevalue);
 	}
-	public void enterPasswordOnPasswordField() {
-		password.sendKeys("secret_sauce");
+	public void enterPasswordOnPasswordField(String passwordvalue) {
+		password.sendKeys(passwordvalue);
 	}
 	public void loginButtonClick() {
 		loginbutton.click();
